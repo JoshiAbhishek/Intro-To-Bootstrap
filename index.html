@@ -6,25 +6,284 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./mainstyles.css">
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <title>Intro To Boostrap</title>
 </head>
 
 <body>
-    <div class="jumbotron container">
+    <div id="top" class="jumbotron container">
         <h1>Intro To Boostrap</h1>
         <h3></h3>
-    </div>    
 
-    <div class="jumbotron container">
-        <h2></h2>
+        <img src="./completed.png" alt="Completed Project" class="img-rounded img-responsive" />
+    </div>
 
+    <div id="main" class="jumbotron container">
+        <div>
+            <h2>Getting Started</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#startCode" aria-expanded="false" aria-controls="startCode">Show Code</button>
+            <div class="collapse" id="startCode">
+                <div class="well">
+                    <pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;!-- Latest compiled and minified CSS --&gt;
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"&gt;
+    &lt;!--jQuery--&gt;
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Latest compiled and minified JavaScript --&gt;
+    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;title&gt;Coffe Appreciation Club&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+                    </pre>
+                </div>
+            </div>
+        </div>
         
+        <div>
+            <h2>Stage 1</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageOneCode" aria-expanded="false" aria-controls="stageOneCode">Show Code</button>
+            <a class="btn btn-success" role="button" target="_blank" href="./site/stageOne.html">See Project</a>
+
+            <div class="collapse" id="stageOneCode">
+                <div class="well">
+                    <pre>
+    &lt;!--Navbar--&gt;
+
+    &lt;nav class="navbar navbar-inverse navbar-fixed-top"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="navbar-header"&gt;
+                &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar"&gt;
+                    &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;a href="#" class="navbar-brand"&gt;Coffee Appreciation Club&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar-collapse collapse" id="navbar"&gt;
+                &lt;ul class="nav navbar-nav"&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#join"&gt;Join&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Stage 2</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageTwoCode" aria-expanded="false" aria-controls="stageTwoCode">Show Code</button>
+            <a class="btn btn-success" role="button" target="_blank" href="./site/stageTwo.html">See Project</a>
+
+            <div class="collapse" id="stageTwoCode">
+                <div class="well">
+<pre>
+
+    &lt;!--Top Section--&gt;
+
+    &lt;div id="top" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h1&gt;Coffee Appreciation Club&lt;/h1&gt;
+            
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quos impedit magni necessitatibus. Et earum deleniti
+                explicabo impedit officiis maxime illo, deserunt exercitationem, voluptates consequuntur corporis maiores.
+                Eveniet, numquam, dicta.&lt;/p&gt;
+
+            &lt;img src="./img/coffee.jpg" alt="Coffee" class="img-rounded"/&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--About Section--&gt;
+    &lt;div id="about" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;About&lt;/h2&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Join Section--&gt;
+
+    &lt;div id="join" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Join&lt;/h2&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Members Section--&gt;
+    &lt;div id="members" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Members&lt;/h2&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Contact Section--&gt;
+    &lt;div id="contact" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Contact&lt;/h2&gt;
+            &lt;button class="btn btn-lg btn-success"&gt;Contact Us!&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Stage 3</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageThreeCode" aria-expanded="false" aria-controls="stageThreeCode">Show Code</button>
+            <a class="btn btn-success" role="button" target="_blank" href="./site/stageThree.html">See Project</a>
+
+            <div class="collapse" id="stageThreeCode">
+                <div class="well">
+                    <pre>
+    &lt;!--Join Section--&gt;
+
+    &lt;div id="join" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Join&lt;/h2&gt;
+
+            &lt;form id="form"&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="firstName"&gt;First Name&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="firstName" placeholder="Enter Your First Name"&gt;
+                &lt;/div&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;label for="lastName"&gt;Last Name&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="lastName" placeholder="Enter Your Last Name"&gt;
+                &lt;/div&gt;
+                &lt;div class="checkbox"&gt;
+                    &lt;label&gt;
+                        &lt;input id="officer" type="checkbox"&gt; Officer
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!--Members Section--&gt;
+    &lt;div id="members" class="jumbotron"&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Members&lt;/h2&gt;
+            &lt;table id="members-table" class="table table-hover table-striped"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;First Name&lt;/th&gt;
+                        &lt;th&gt;Last Name&lt;/th&gt;
+                        &lt;th&gt;Officer&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Joe&lt;/td&gt;
+                        &lt;td&gt;Smith&lt;/td&gt;
+                        &lt;td&gt;Yes&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Mary&lt;/td&gt;
+                        &lt;td&gt;Gomez&lt;/td&gt;
+                        &lt;td&gt;Yes&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Stage 4</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageFourCode" aria-expanded="false" aria-controls="stageFourCode">Show Code</button>
+            <a class="btn btn-success" role="button" target="_blank" href="./site/stageFour.html">See Project</a>
+
+            <div class="collapse" id="stageFourCode">
+                <div class="well">
+                    <code>&lt;img src="./img/coffee.jpg" alt="Coffee" class="img-rounded img-responsive"/&gt</code>
+                    <br></br>
+
+<pre>
+&lt;!--About Section--&gt
+    &lt;div id="about" class="jumbotron"&gt
+        &lt;div class="container"&gt
+            &lt;h2&gtAbout&lt;/h2&gt
+
+            &lt;div class="row"&gt
+                &lt;div class="col-md-4"&gt
+                    &lt;h3&gtFirst&lt;/h3&gt
+                    &lt;p&gtLorem ipsum dolor sit amet, consectetur adipisicing elit. Facere officia reprehenderit sapiente, veritatis
+                        dignissimos assumenda a maiores. Laboriosam, temporibus animi ullam fugit voluptates eius, totam
+                        iste perferendis reiciendis voluptatum corporis.&lt;/p&gt
+                &lt;/div&gt
+                &lt;div class="col-md-4"&gt
+                    &lt;h3&gtSecond&lt;/h3&gt
+                    &lt;p&gtLorem ipsum dolor sit amet, consectetur adipisicing elit. Facere officia reprehenderit sapiente, veritatis
+                        dignissimos assumenda a maiores. Laboriosam, temporibus animi ullam fugit voluptates eius, totam
+                        iste perferendis reiciendis voluptatum corporis.&lt;/p&gt
+                &lt;/div&gt
+                &lt;div class="col-md-4"&gt
+                    &lt;h3&gtThird&lt;/h3&gt
+                    &lt;p&gtLorem ipsum dolor sit amet, consectetur adipisicing elit. Facere officia reprehenderit sapiente, veritatis
+                        dignissimos assumenda a maiores. Laboriosam, temporibus animi ullam fugit voluptates eius, totam
+                        iste perferendis reiciendis voluptatum corporis.&lt;/p&gt
+                &lt;/div&gt
+            &lt;/div&gt
+        &lt;/div&gt
+    &lt;/div&gt
+</pre>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Completed Project</h2>
+            <p></p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#completedCode" aria-expanded="false" aria-controls="completedCode">Show Code</button>
+            <a class="btn btn-success" role="button" target="_blank" href="./site/completed.html">See Project</a>
+
+            <div class="collapse" id="completedCode">
+                <div class="well">
+                    <code>&lt;link rel="stylesheet" href="./css/styles.css"&gt</code>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

@@ -48,3 +48,6 @@ Temporary Items
 
 # Visual Studio Code Files
 .vscode/
+
+# Temp Code Files
+temp.html

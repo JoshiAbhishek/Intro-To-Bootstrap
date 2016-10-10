@@ -21,7 +21,7 @@
     <div id="top" class="jumbotron">
         <div class="container">
         <h1>Intro To Boostrap</h1>
-        <h3>//</h3>
+        <h3>This is a companion website for an Intro To Bootstrap workshop by Abhishek Joshi. The following code and project stages are for an example website made with Bootstrap for a "Coffee Appreciation Club."</h3>
 
         <img src="./completed.png" alt="Completed Project" class="img-rounded img-responsive" />
         </div>
@@ -31,7 +31,7 @@
 <div class="container">
         <div>
             <h2>Getting Started</h2>
-            <p>//</p>
+            <p>To start working on the Coffee Appreciation Club website, we need a basic HTML website structure.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#startCode" aria-expanded="false" aria-controls="startCode">Show Code</button>
             <div class="collapse" id="startCode">
                 <div class="well">
@@ -67,7 +67,7 @@
         
         <div>
             <h2>Stage 1</h2>
-            <p>//</p>
+            <p>The first stage of our website includes adding a Bootstrap Navbar with three links for the "About," "Join," and "Contact" sections of the website.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageOneCode" aria-expanded="false" aria-controls="stageOneCode">Show Code</button>
             <a class="btn btn-success" role="button" target="_blank" href="./site/stageOne.html">See Project</a>
 
@@ -104,7 +104,7 @@
 
         <div>
             <h2>Stage 2</h2>
-            <p>//</p>
+            <p>The next stage involves adding the basic sections of our website, including a top welcome section, an about section, a join section, and a members and contact section. All of the sections use Bootstrap Jumbotrons and Containers. The About section also has our website's main image.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageTwoCode" aria-expanded="false" aria-controls="stageTwoCode">Show Code</button>
             <a class="btn btn-success" role="button" target="_blank" href="./site/stageTwo.html">See Project</a>
 
@@ -166,7 +166,7 @@
 
         <div>
             <h2>Stage 3</h2>
-            <p>//</p>
+            <p>The thirds stage of our website invloves adding the Join section form for new members, and the table of members in the Members section. Some additional JavaScript code is present to add submitted members from the Join from to the Members table.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageThreeCode" aria-expanded="false" aria-controls="stageThreeCode">Show Code</button>
             <a class="btn btn-success" role="button" target="_blank" href="./site/stageThree.html">See Project</a>
 
@@ -225,6 +225,15 @@
             &lt;/table&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+
+    &lt;script&gt;
+        $("#form").submit(function(e){
+            e.preventDefault();
+            $("#members-table &gt; tbody:last-child").append("&lt;tr&gt;&lt;td&gt;" + $("#firstName").val() + "&lt;/td&gt;&lt;td&gt;" + $("#lastName").val() + "&lt;/td&gt;&lt;td&gt;" + (($("#officer").is(':checked') == true) ? "Yes" : "No") + "&lt;/td&gt;&lt;/tr&gt;");
+            $("#firstName").val("");
+            $("#lastName").val("");
+            $("#officer").attr("checked", false);
+    });
                     </pre>
                 </div>
             </div>
@@ -232,7 +241,7 @@
 
         <div>
             <h2>Stage 4</h2>
-            <p>//</p>
+            <p>The fourth stage of our website involves adding a responsive class to the main image as well as creating a grid for the About section's content.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#stageFourCode" aria-expanded="false" aria-controls="stageFourCode">Show Code</button>
             <a class="btn btn-success" role="button" target="_blank" href="./site/stageFour.html">See Project</a>
 
@@ -276,13 +285,60 @@
 
         <div>
             <h2>Completed Project</h2>
-            <p>//</p>
+            <p>To complete our project, we will create some custom CSS styles to extend Bootstrap, and add a link to the file in the head of the website.</p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#completedCode" aria-expanded="false" aria-controls="completedCode">Show Code</button>
             <a class="btn btn-success" role="button" target="_blank" href="./site/completed.html">See Project</a>
 
             <div class="collapse" id="completedCode">
                 <div class="well">
                     <code>&lt;link rel="stylesheet" href="./css/styles.css"&gt</code>
+                    <br></br>
+                    <pre>
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Raleway';
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#top {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about {
+    text-align: center;
+    background-color: #696969;
+    color: #d9d9d9;
+}
+
+#members {
+    background-color: #ffffff;
+}
+
+#contact {
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+                    </pre>
                 </div>
             </div>
         </div>
